@@ -1,0 +1,92 @@
+@import '../components/colors';
+
+.formulario-alta{
+    font-size: 30px;
+    color:$color_oscuro;
+    text-transform: uppercase;
+    text-align: center;
+    
+    @media (max-width: 768px) {
+      & {
+      float: left;
+      }
+    }
+  
+  }
+
+  .agregar-alta{
+    font-size: 20px;
+    color:$color_oscuro;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+    @media (max-width: 768px) {
+      & {
+      float: left;
+      }
+    }
+  
+  }
+  .form-agregar{
+    font-size: 15px;
+    color:$color_oscuro;
+    font-style: italic;
+    font-weight: 100;
+    opacity: 50%;
+    background-color: $color_gris;
+    width: 10%;
+    text-align: center;
+    color: $color_claro;
+    margin-left: 45%;
+    @media (max-width: 768px) {
+      & {
+      float: left;
+      }
+    }
+  
+  }
+
+.form-botones{
+    button{
+
+        background-color: $color_navbar;
+        color: $color_oscuro;
+
+       
+    }
+    :hover{
+        color: $color_claro;
+    }
+}
+
+  .formulario-agregar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color_body;
+    margin-top: 5px;
+    margin-left: 35%;
+    width: 30%;
+    color: $color_claro;
+    border-radius: 5px;
+    padding: 10px;
+
+    
+
+
+    
+    label{
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+  
+            }
+
+
+
+
+
+  }

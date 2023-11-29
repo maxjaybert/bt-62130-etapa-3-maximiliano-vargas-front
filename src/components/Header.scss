@@ -1,0 +1,249 @@
+@import './colors';
+.header-promo{
+    font-size: 50px;
+    color:$color_articulos;
+    text-shadow: 1px 4px 10px $color_oscuro;
+    @media (max-width: 768px) {
+      & {
+        float: left;
+      }
+    }
+    
+  }
+  
+  .texto-1{
+    font-size: 20px;
+    color: $color_oscuro;
+    font-weight: 600;
+  }
+  
+  .texto-2{
+    font-size: 15px;
+    color: $color_body;
+    font-style: italic;
+  }
+  
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    
+    @media (max-width: 768px) {
+      & {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  
+  #menu {
+    display: none;
+    
+    &:checked + .nav-bar {
+      display: block;
+    }
+    
+    &:checked ~ .search-bar .menu-toggle__label {
+      background-color: yellow;
+    }
+  }
+  
+  
+
+  /* --------- NAVBAR --------- */
+  
+  .nav-bar {
+    background-color: $color_navbar;
+    
+    &__nav-list {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      
+      @media (max-width: 768px) {
+        & {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+    }
+  
+    &__nav-item {
+      text-align: center;
+    /*   background-color: pink; */
+    }
+    &__nav-link {
+      display: block;
+      /* background-color: $color_azulOscuro; */
+      color: $color_oscuro;
+      font-weight: 500;
+      padding: 1em 2em;
+      text-decoration: none;
+      
+      &:hover{ //!!
+    background-color: $color_searchBar;
+      color: $color_navbar;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  
+  /* --------- SEARCH BAR --------- */
+  
+  .search-bar {
+    background-color: $color_navbar;//!
+    display: flex;
+    justify-content: space-between;
+  
+    &__logo-container,
+    &__form-container,
+    &__carrito-container {
+      padding: 1em;
+    }
+  
+    &__logo-container {
+        color: $color_body;
+      }
+  
+    &__form-container {
+      background-color: $color_searchBar;
+      display: flex;
+      flex-basis: 100%; /* similar al width */
+      justify-content: center;
+      border-radius: 10px;
+    }
+  
+    &__form-label {
+  /*     background-color: greenyellow; */
+  padding-right: 10px;
+  color: $color_claro;
+  }
+  
+    &__form-search {
+      background-color: $color_navbar;
+      opacity: 70%;
+      width: 70%;
+      border-radius: 10px;
+      padding: 5px;
+      text-align: left center;
+    }
+  
+    &__form-submit {
+      background-color: $color_gris;
+      color: $color_claro;
+      margin-left: 20px;
+      padding: 5px;
+      border-radius: 5px;
+      
+  
+      &:hover{
+       
+        cursor: pointer;
+        background-color: $color_navbar;
+        color: $color_gris;
+      }
+  
+    }
+  
+    &__carrito-container {
+      flex: 0 0 3em; /* shorthand: grow | shrink | basis */
+      color: $color_gris;
+      :hover,
+      :focus{
+    color: $color_articulos;
+    text-shadow: 5px 2px 5px $color_gris;
+    transform: scale(1.2);
+    transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+    }
+  }
+  
+  
+  /* --------- --------- */
+  
+  .section-cards__header{
+    background-image: url(/public/img/sales.webp);
+    background-position: center center;
+    object-fit: cover;
+    padding: 50px 90px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+  
+
+    
+@media (min-width: 1024px) {
+  & {
+    min-width: 240px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  & {
+
+    min-height: 200px;
+    max-height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    
+  }}
+  
+  
+  }
+  
+  
+  
+  
+  
+  /* --------- MENU TOOGLE --------- */
+  
+  .menu-toggle {
+    display: none;
+    background-color: black;
+    flex: 0 0 3em;
+    position: relative;
+  
+    &__label {
+      display: block;
+      background-color: #333;
+      height: 100%;
+    }
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+      display: block;
+      background-color: #333;
+      height: 0.2em;
+      position: absolute;
+      right: 0.5em;
+      left: 0.5em;
+      cursor: pointer;
+    }
+  
+    &__top-bread {
+      top: 0.8em;
+    }
+  
+    &__meat {
+      top: 50%;
+      margin-top: -0.1em; /* lo centro */
+    }
+  
+    &__bottom-bread {
+      bottom: 0.8em;
+    }
+  
+    @media (max-width: 768px) {
+      & {
+        display: block;
+      }
+    }
+  }
+  

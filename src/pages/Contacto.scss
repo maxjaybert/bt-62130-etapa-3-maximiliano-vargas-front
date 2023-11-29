@@ -1,0 +1,170 @@
+@import '../components/colors';
+
+body{
+background-color: $color_navbar;
+}
+
+form{
+  align-items: center;
+}
+
+fieldset{
+background-color: $color_claro;
+border: 0;
+border-radius: 20px;
+margin-left: 30%;
+margin-right: 30%;
+text-align: center;
+color: $color_searchBar;
+margin-top: 10px;
+margin-bottom: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+
+input{
+  margin-top: 5px;
+  &:focus{
+    background-color: $color_gris;
+    opacity: 50%;
+    color: $color_claro;
+  }
+}
+
+div{
+  height: 20px;
+}
+
+.medida-campos{
+  width: 300px;
+  height: 30px;
+  text-align: center;
+
+}
+
+select{
+  &:focus{
+    background-color: $color_gris;
+    opacity: 50%;
+    color: $color_claro;
+  }
+  
+}
+
+.medida-campos-text{
+  width: 400px;
+  text-align: center;
+  padding-top: 10px;
+  &:focus{
+    background-color: $color_gris;
+    opacity: 50%;
+    color: $color_claro;
+  }
+}
+  
+
+
+
+@media (min-width: 1024px) {
+  & {
+    min-width: 240px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  & {
+
+    min-height: 800px;
+    max-height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    padding: 0 10px 0 10px;
+  }
+
+  div{
+    height: 20px;
+
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+  }
+
+ 
+
+br{
+  display: none;
+}
+
+  .medida-campos, .medida-campos-text{
+    width: 100%;
+
+  }
+
+
+label{
+  align-content: center;
+}
+
+
+
+
+}
+
+
+}
+
+input,
+textarea{
+  border: 0;
+  border-bottom: 2px solid $color_navbar;
+
+}
+
+
+button{
+  padding: 7px;
+  background-color: $color_body;
+  border-radius: 3px;
+  color: $color_claro;
+  margin: 5px;
+
+  &:hover,
+  :focus{
+    cursor: pointer;
+    background-color: $color_oscuro;
+  
+    border: none;
+    gap: 5px;
+    scale: 1.2;
+  }
+}
+
+.campo-obligatorio{
+  font-size: 12px;
+  font-style: italic;
+
+}
+
+.chat{
+  bottom: 20px;
+  border-radius: 50%;
+  left: 90%;
+  width: 30px;
+  height: 60px;
+  line-height: 60px;
+  color: $color_gris;
+  scale: 2;
+  position: sticky;
+  margin-bottom: 10px;
+  
+
+ &:hover{
+  color: $color_articulos;
+ transform:scale(1.2);
+ transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+ }
+}
+

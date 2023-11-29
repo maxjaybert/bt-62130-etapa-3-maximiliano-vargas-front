@@ -1,0 +1,33 @@
+@import './colors';
+
+table.tabla-alta{
+    border-collapse: collapse;
+    width: 95%;
+    margin: 1rem auto;
+
+    td{
+        
+        padding: 5px;
+        text-align: center;
+        border-bottom: 1px solid $color_gris;
+
+
+    }
+
+    .td-nombre{
+        color: $color_oscuro;
+        font-weight: bold;
+
+    }
+
+    th{
+        padding: 3px;
+        background-color: $color_articulos;
+        color: $color_claro;
+        text-align: center;
+        border-left: 1px solid $color_claro;
+        border-right: 1px solid $color_claro;
+    }
+
+
+}

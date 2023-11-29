@@ -1,0 +1,87 @@
+@import './colors';
+
+.footer{
+
+    background-color: $color_oscuro;
+    color: $color_claro;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    &__container{
+         display: flex;
+      flex-direction: row;
+  
+    padding: 10px;
+  
+    text-align: left;
+    
+  
+    }
+
+    &__logo-container{
+        padding-top: 50px;
+       text-align: center;
+       
+        h3{
+            padding-bottom: 50px;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            color: $color_articulos;
+        }
+    }
+  
+  div{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  h3{
+  
+  
+    height: 20%;
+    text-align: center;
+    font-size: medium;
+  }
+  
+  ul{
+    list-style-type: none;
+  
+    padding-bottom: 10px;
+  
+    li{
+      padding: 5px;
+      font-style: italic;
+      font-size: small;
+    }
+    
+  }
+  
+  @media (min-width: 360px) and (max-width: 768px) {
+    & {
+      min-width: 400px;
+      max-width: 100%;
+      height: 100%;
+   
+  }
+
+&__container{
+    display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; 
+      
+}
+
+&__logo-container{
+    padding-top: 0;
+}
+
+ul, h3{
+    padding-top: 5px;
+    
+}
+
+  }
+}

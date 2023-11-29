@@ -1,0 +1,66 @@
+@import '../components/colors';
+
+
+.nosotros{
+    
+
+    &__text{
+
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+
+
+        }    
+
+    
+        &__text-parrafo{
+            color: $color_body;
+            text-align: left;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        &__image--container{
+            
+            height: 150px;
+        }
+
+
+}
+
+
+
+
+
+
+
+.separadores{
+    margin-top: 20px;
+    border: none;
+}
+
+img{
+
+      
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+        opacity: 70%;
+        padding: 10px;
+       zoom: 1.5;
+
+    
+    
+}
+
+
+.nosotros__image_1{
+    object-position: center top;
+}
+
+.nosotros__image_2{
+    object-position: center bottom;
+}

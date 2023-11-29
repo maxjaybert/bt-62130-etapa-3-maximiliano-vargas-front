@@ -1,0 +1,14 @@
+@import '../components/colors';
+
+.section-cards {
+  background-color: $color_navbar; /* color navbar */
+  padding: 1em;
+}
+
+.cards-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
