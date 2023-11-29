@@ -7,7 +7,8 @@ import { del, get, post, put } from '../utils/http'
 const ProductoContext = createContext()
 
 /* 2do -> El armado del Provider */
-const url = 'http://localhost:8080/api/productos/'
+// const url = 'http://localhost:8080/api/productos/'
+const url = 'https://etapa-3-excellence-import.onrender.com/api/productos'
 
 const ProductoProvider = ({ children }) => {
     const [productos, setProductos] = useState(null)

@@ -9,7 +9,8 @@ import { useLocalStorage } from '../hooks/useLocalStorage'
 const CarritoContext = createContext()
 
 /* 2do -> El armado del Provider */
-const url = 'http://localhost:8080/api/carrito/'
+// const url = 'http://localhost:8080/api/carrito/'
+const url = 'https://etapa-3-excellence-import.onrender.com/api/carritos'
 const CarritoProvider = ({ children }) => {
     const [guardarEnElCarrito, eliminarDelCarrito, limpiarCarrito, actualizarCarrito, carrito] = useLocalStorage('carrito', [])
 

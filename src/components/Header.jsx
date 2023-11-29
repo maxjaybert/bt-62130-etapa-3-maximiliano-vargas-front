@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Header.scss'
 import Navbar from './Navbar'
+import CarritoContext from "../contexts/CarritoContext"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
@@ -15,6 +16,10 @@ import Slider from './Slider'
 
 
 const Header = () => {
+
+    const { carrito } = useContext(CarritoContext);
+    const contadorCarrito = carrito ? carrito.length : 0;
+
     return (
         <header className="main-header">
             <input type="checkbox" id="menu" />
@@ -29,7 +34,7 @@ const Header = () => {
                     <input type="submit" value="Buscar" className="search-bar__form-submit" />
                 </form>
 
-                <Link className="search-bar__carrito-container" to="/carrito"><FontAwesomeIcon icon={faCartShopping} size="2xl" /></Link>
+                <Link className="search-bar__carrito-container" to="/carrito">  <div className="search-bar__carrito-contador">{contadorCarrito}</div><FontAwesomeIcon icon={faCartShopping} size="2xl" /></Link>
 
                 <div className="menu-toggle">
                     <label htmlFor="menu" className="menu-toogle__label">
